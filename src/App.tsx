@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import AiInsightsSection from "./AiInsightsSection";
 
 type Donation = {
   id: number;
