@@ -237,6 +237,14 @@ export default function App() {
             </table>
           </div>
         </section>
+                <AiInsightsSection
+          donations={donations.map((d) => ({
+            donorName: d.donor,
+            amount: d.amount,
+            category: d.category,
+            beneficiaries: d.beneficiaries,
+          }))}
+        />
 
         <footer className="text-center text-sm text-slate-500">
           Charity Donation Impact Visualizer · Demo data for project preview
